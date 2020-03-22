@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Mine Sweeperr</title>
+</head>
+
+<body class="body" onload="initGame()">
+
+    <div class="modal">
+        <span class="alert"></span>
+    </div>
+    <div class="modal-guide">
+        <span class="guide"></span>
+    </div>
+
+    <div class="lineTimer">your time:
+        <input class="timer" type="text" id="timer" />
+    </div>
+    <div class="smileys">
+        <button class="smile-btn" onclick="initGame()">${SMILEY_START}</button>
+    </div>
+    <!-- <div class="table" > -->
+    <!-- <button  class = "smile-btn" onclick = "initGame()" ></button> -->
+    <div class="board-area">
+        <div class="btns">
+
+            <button class="difficulty" onclick="setGameLevel(4)">Easy</button>
+            <button class="difficulty" onclick="setGameLevel(8)">Normal</button>
+            <button class="difficulty" onclick="setGameLevel(16)">Hard</button>
+        </div>
+        <div class="hint">
+            <button class="hintbtn1" onclick="hintIsOn(this,1)">💡</button>
+            <button class="hintbtn2" onclick="hintIsOn(this,2)">💡</button>
+            <button class="hintbtn3" onclick="hintIsOn(this,3)">💡</button>
+        </div>
+        <table class="board">
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- </table> -->
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
